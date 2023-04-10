@@ -1,0 +1,172 @@
+.home-wrapper {
+  height: 100dvh;
+  height: 100svh;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-wrapper::before {
+  content: "";
+  position: absolute;
+  background: url("../assets/home-bg.jpg") no-repeat center center/cover;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+.home-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.header {
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.nav {
+  width: 80%;
+  margin-inline: auto;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 250px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo > img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.nav-section {
+  display: flex;
+  gap: 20px;
+}
+.nav-section > select {
+  font-size: 1.1rem;
+  padding: 0.35rem 0.35rem;
+  font-weight: bold;
+  color: white;
+  background: none;
+  border-radius: 10px;
+}
+.nav-section > button {
+  background-color: red;
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.35rem 0.35rem;
+  font-weight: bold;
+  border: none;
+}
+.showcase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  gap: 1.57rem;
+  margin-inline: auto;
+}
+.showcase-heading {
+  font-size: 3rem;
+  color: white;
+  font-weight: bolder;
+}
+.showcase-sub-heading {
+  font-size: 1.7rem;
+  color: white;
+  font-weight: bold;
+}
+.showcase-subtitle {
+  font-size: 1rem;
+  color: white;
+}
+.showcase-input-section {
+  display: flex;
+  gap: 1rem;
+}
+
+.showcase-input-section > input {
+  padding: 1rem 0.9rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.showcase-input-section > input::placeholder {
+  color: white;
+}
+input {
+  outline: none;
+}
+.showcase-input-section > button {
+  font-size: 1rem;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+@media (max-width: 800px) {
+  .nav {
+    width: 90%;
+  }
+  .nav-section > select {
+    font-size: 0.9rem;
+    padding: 0.2rem 0.2rem;
+    font-weight: bold;
+    color: white;
+    background: none;
+    border-radius: 0;
+  }
+  .nav-section > button {
+    background-color: red;
+    color: white;
+    font-size: 0.9rem;
+    padding: 0.3rem 0.5rem;
+    font-weight: bold;
+    border: none;
+  }
+  .logo {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .showcase {
+    gap: 1rem;
+  }
+  .showcase-heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .showcase-sub-heading {
+    font-size: 1rem;
+  }
+
+  .showcase-input-section {
+    flex-direction: column;
+  }
+}
