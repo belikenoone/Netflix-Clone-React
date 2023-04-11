@@ -21,7 +21,7 @@ const OtherSections = () => {
         </div>
         <img src={tv} alt="tv-image" />
       </section>
-      <section className={styles.offline} data-aos="fade-left">
+      <section className={styles.offline} data-aos="fade-left" data-aos-offeset="300">
         <img src={mobile} alt="image" />
         <div className={styles["section-text"]}>
           <span>Download Your Shows To Watch Offline</span>
